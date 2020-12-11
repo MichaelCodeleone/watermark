@@ -34,7 +34,7 @@ def folder_select():
 	folder_name = fd.askdirectory()
 	phrase_display(folder_name,center,folder_row)
 	folder = folder_name
-	return 0
+	return
 
 #Set full path of watermark image
 def watermark_select():
@@ -42,7 +42,7 @@ def watermark_select():
 	watermark = fd.askopenfilename()
 	phrase_display(watermark,center,watermark_row)
 	watermark_path = watermark
-	return 0
+	return
 
 #Show full paths in Tkinter
 def phrase_display(text,column,row):
@@ -50,7 +50,7 @@ def phrase_display(text,column,row):
 	phrase.grid(column = column, row = row)
 	phrase.insert(tk.END, text[-30:])
 	phrase.configure(state='disabled')
-	return 0
+	return
 
 # ------Pillow Helper Functions------
 #Center watermark image
